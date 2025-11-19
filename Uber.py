@@ -6,7 +6,7 @@ st.title("Uber Pickups in NYC")
 
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
 	'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
-DATE_COLUMN = date/time
+DATE_COLUMN = "date/time"
 
 def load_data(nrow):
 	data=pd.read_csv(DATA_URL,nrows=nrows)
@@ -17,5 +17,5 @@ def load_data(nrow):
 
 data_load_state=st.text("Loading Data...")
 data=load_data(10000)
-data_load_state=st.text("Loading Data...Done!)
+data_load_state=st.text("Loading Data...Done!")
 
